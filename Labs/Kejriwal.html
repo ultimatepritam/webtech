@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Styling</title>
+  <link rel="icon" type="icon/jpg" href="rdp.jpg">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <meta name="author" content="Pritam Mondal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <center>
+  <h1> Na koi odd, na koi even </h1>
+  <h3> zindegi me bhi na koi villain </h3>
+  <p><br></p>
+  </center>
+<center>
+<button onclick="myFunction()">Check</button>
+
+<p id="tag"></p>
+</center>
+<script>
+function myFunction() {
+    var num = prompt("Enter a number", );
+    if (num != null) {
+      if(num % 2 == 0)
+      {
+        alert (num+' is even');
+        document.getElementById("tag").innerHTML =
+        num + " is an Even number";
+      }
+      else if(num % 2 == 1)
+      {
+        alert(num+' is odd');
+        document.getElementById("tag").innerHTML =
+        num + " is an Odd number";
+      }
+    }
+    else {
+      alert('Wrong input!');
+      document.getElementById("tag").innerHTML =
+      "Wrong input! Please try again";
+    }
+}
+</script>
+
+</body>
+</html>

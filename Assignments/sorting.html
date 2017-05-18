@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Array sort</title>
+	</head>
+	<body>
+		<p>
+		<h3>Before sorting: <br></h3>100,70,30,40,25
+		<p>
+		<button onclick="acsort()">Sort Ascending</button>
+		</p>
+		<p>
+		<button onclick="dcsort()">Sort Decending</button>
+		</p>
+		<p>
+		<button onclick="rev()">Reverse Array</button>
+		</p>
+		<h3>Result: <br></h3>
+		<p id="content"></p>
+		<script>
+			var arr = [100,70,30,40,25];
+			
+			function acsort(){
+			arr.sort(function(a, b){return a - b});
+			//document.getElementById("content").innerHTML="<br>After sorting: [Ascending] <br>";
+			document.getElementById("content").innerHTML=arr;
+			}
+			
+			function dcsort(){
+			//document.write("<br>After sorting: [Decending] <br>");
+			arr.sort(function(a, b){return b - a});
+			document.getElementById("content").innerHTML=arr;
+			}
+			
+			function rev(){
+			arr.reverse();
+			document.getElementById("content").innerHTML=arr;
+			}
+		</script>
+	</body>
+</html>

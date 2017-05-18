@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+  <link rel="icon" type="icon/jpg" href="rdp.jpg">
+  <meta charset="utf-8">
+  <meta name="author" content="Pritam Mondal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <center><h1>HTML FORM</h1></center>
+  <style>
+  table {
+      font-family: arial;
+      border-collapse: collapse;
+      width: 75%;
+  }
+@font-face {
+   font-family: verdana;
+}
+div,p,h1 {
+   font-family: verdana;
+}
+  td, th {
+      border: 1px solid #fdddfd;
+      text-align: left;
+      padding: 8px;
+  }
+
+  tr:nth-child(even) {
+      background-color: #fff;
+  }
+  </style>
+</head>
+<body>
+  <center>
+  <p>
+    <form action="mailto:ultimaterdp@gmail.com" method="post" enctype="text/plain">
+      <fieldset style="width:60%;">
+   <legend>Student information</legend>
+  <table>
+    <tr>
+      <th></th>
+      <th><center>All fields are mandatory</center></th>
+    </tr>
+    <tr>
+      <td>Name<br><br>University<br><br>Student ID</td>
+      <td>
+        <center>
+        <table>
+          <tr style="background-color: #f4f4f4;">
+            <td><input type="text" name="name" maxlength="50" size="42"></td>
+          </tr>
+          <tr style="background-color: #fff;">
+            <td><input type="text" name="university" maxlength="50" size="42"></td>
+          </tr>
+          <tr style="background-color: #f4f4f4;">
+            <td><input type="text" name="id" maxlength="50" size="42"></td>
+          </tr>
+        </table>
+      </center>
+      </td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>
+        <center>
+        <table>
+          <tr>
+            <td><input type="radio" name="gender" value="male" checked> Male</td>
+          </tr>
+          <tr style="background-color: #f4f4f4;">
+            <td> <input type="radio" name="gender" value="female"> Female</td>
+          </tr>
+          <tr>
+            <td><input type="radio" name="gender" value="other"> Other</td>
+          </tr>
+        </table>
+      </center>
+      </td>
+
+    </tr>
+    <tr>
+      <td>Register</td>
+      <td><center><table><tr style="background-color: #f4f4f4;"><td><input type="submit" value="SUBMIT">&nbsp&nbsp<input type="reset" value="RESET"></td></tr></table></center></td>
+    </tr>
+  </table>
+</fieldset>
+</form>
+</p>
+</center>
+</body>
+</html>

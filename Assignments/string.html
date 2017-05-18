@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Strings</title>
+	</head>
+	<body>
+		<p>
+		<button onclick="Check()">Check</button>
+		</p>
+		<h3>Result: <br></h3>
+		<p id="content"></p>
+		<script>
+			var text1 = "Javascript Programming";
+			var text2 = "Happy Birthday";
+			var text3 = text2.concat(" ", text1);
+			var pos = text1.indexOf("Prog");
+			document.write(text3);
+			document.write("<br>"+pos+"<br>");
+			
+			function Check() {
+			var str = "Javascript Programming";
+			var res = str.match("Programming");
+			if(res!=null) {document.getElementById("content").innerHTML = res;}
+			else document.getElementById("content").innerHTML = "Not found";}
+		</script>
+	</body>
+</html>

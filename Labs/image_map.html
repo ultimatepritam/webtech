@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image map</title>
+  <link rel="icon" type="icon/jpg" href="rdp.jpg">
+  <meta charset="utf-8">
+  <meta name="author" content="Pritam Mondal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <center><h1>Image map</h1></center>
+  <style>
+  .centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: -webkit-translate(-50%, -50%);
+    transform: -moz-translate(-50%, -50%);
+    transform: -ms-translate(-50%, -50%);
+  }
+  @font-face {
+   font-family: verdana;
+}
+div,p,h1 {
+   font-family: verdana;
+}
+  </style>
+</head>
+<body>
+  <div class="centered">
+  <center>
+  <p><a href="https://www.google.com" target="_blank">Click this hyperlink to open google</a></p>
+  <p>
+    <img src="rdp.jpg" alt="Pritam" usemap="#mymap" style="width:400px;height:450px;">
+  </p>
+</center>
+</div>
+<map name="mymap">
+  <area shape="rect" coords="230,109,370,174" href="http://tiny.cc/RayBan" target="_blank" alt="glasses">
+</map>
+</body>
+</html>
