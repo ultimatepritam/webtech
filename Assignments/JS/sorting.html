@@ -1,0 +1,79 @@
+<html>
+	<!DOCTYPE html>
+<html>
+<head>
+  <title>Array sorting</title>
+  <link rel="icon" type="icon/jpg" href="rdp.jpg">
+  <meta charset="utf-8">
+  <meta name="author" content="Pritam Mondal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<div>
+  <center>
+    <h1>This Web Page was designed by Pritam Mondal</h1>
+    <h2>My Html Assignment</h2>
+    <hr>
+  </center>
+  </div>
+  <hr>
+  <style>
+  .centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: -webkit-translate(-50%, -50%);
+    transform: -moz-translate(-50%, -50%);
+    transform: -ms-translate(-50%, -50%);
+  }
+    @font-face {
+      font-family: verdana;
+    }
+    div{
+      background-color: #696969;
+    }
+    h1{
+      color: deeppink;
+      padding-top: 8px;
+      margin-top: 4px;
+    }
+    div,p,h1,h2, ol {
+      font-family: verdana;
+    }
+  </style>
+</head>
+	<body>
+		<p>
+		<h3>Before sorting: <br></h3>100,70,30,40,25
+		<p>
+		<button onclick="acsort()">Sort Ascending</button>
+		</p>
+		<p>
+		<button onclick="dcsort()">Sort Decending</button>
+		</p>
+		<p>
+		<button onclick="rev()">Reverse Array</button>
+		</p>
+		<h3>Result: <br></h3>
+		<p id="content"></p>
+		<script>
+			var arr = [100,70,30,40,25];
+			
+			function acsort(){
+			arr.sort(function(a, b){return a - b});
+			//document.getElementById("content").innerHTML="<br>After sorting: [Ascending] <br>";
+			document.getElementById("content").innerHTML=arr;
+			}
+			
+			function dcsort(){
+			//document.write("<br>After sorting: [Decending] <br>");
+			arr.sort(function(a, b){return b - a});
+			document.getElementById("content").innerHTML=arr;
+			}
+			
+			function rev(){
+			arr.reverse();
+			document.getElementById("content").innerHTML=arr;
+			}
+		</script>
+	</body>
+</html>

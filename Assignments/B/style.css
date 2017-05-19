@@ -1,0 +1,15 @@
+@font-face {
+	font-family: verdana;
+}
+div,p,h1,h3 {
+	font-family: verdana;
+}
+
+h1{
+	color: deeppink;
+}
+
+div{
+	position:fixed;
+	left:34%;
+}

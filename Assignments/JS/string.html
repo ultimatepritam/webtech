@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Strings</title>
+  <link rel="icon" type="icon/jpg" href="rdp.jpg">
+  <meta charset="utf-8">
+  <meta name="author" content="Pritam Mondal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<div>
+  <center>
+    <h1>This Web Page was designed by Pritam Mondal</h1>
+    <h2>My Html Assignment</h2>
+    <hr>
+  </center>
+  </div>
+  <hr>
+  <style>
+  .centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: -webkit-translate(-50%, -50%);
+    transform: -moz-translate(-50%, -50%);
+    transform: -ms-translate(-50%, -50%);
+  }
+    @font-face {
+      font-family: verdana;
+    }
+    div{
+      background-color: #696969;
+    }
+    h1{
+      color: deeppink;
+      padding-top: 8px;
+      margin-top: 4px;
+    }
+    div,p,h1,h2, ol {
+      font-family: verdana;
+    }
+  </style>
+</head>
+	<body>
+	<center>
+		<p>
+		<button onclick="Check()">Check</button>
+		</p>
+		<h3>Result: <br></h3>
+		<p id="content"></p>	
+		<script>
+			var text1 = "Javascript Programming";
+			var text2 = "Happy Birthday";
+			var text3 = text2.concat(" ", text1);
+			var pos = text1.indexOf("Prog");
+			document.write("Str1: "+text1+"<br>");
+			document.write("Str2: "+text2+"<br>");
+			document.write("Str3: "+text3+"<br>");
+			text1 = text1.replace(text1, text2);
+			document.write("Str1: "+text1+"<br>");
+			document.write("<br> 'Prog' is found in "+pos+"th index position<br>");
+			
+			function Check() {
+			var str = "Javascript Programming";
+			var res = str.match("Programming");
+			if(res!=null) {document.getElementById("content").innerHTML = res;}
+			else document.getElementById("content").innerHTML = "Not found";}
+		</script>
+		</center>
+	</body>
+</html>
